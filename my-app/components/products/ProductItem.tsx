@@ -17,6 +17,9 @@ export default function ProductItem({product}:{product:Product}) {
           />
         </Link>
       </figure>
+      <div className='card-body'>
+        <h2 className='card-title font-normal'>{product.name}</h2>
+      </div>
     </div>
   )
 }
