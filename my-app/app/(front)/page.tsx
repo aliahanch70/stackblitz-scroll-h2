@@ -1,19 +1,20 @@
-"use client"
-import ThemeChange from "@/components/theme/ThemeChange";
+
 import Image from "next/image";
-import { useEffect } from 'react'
-import { themeChange } from 'theme-change'
+import data from '@/lib/data'
+import ProductItem from "@/components/products/ProductItem";
+
 
 export default function Home() {
 
 
-useEffect(() => {
-  themeChange(false)
-  // 👆 false parameter is required for react project
-}, [])
   return (
     <>
       <h2 className="text-2xl py-2">Latest Product</h2>
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5">
+        {data.products.map((product)=>(
+          <ProductItem key={product.slug} product={product}/>
+        ))}
+      </div>
     </>
   );
 }

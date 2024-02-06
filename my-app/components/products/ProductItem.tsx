@@ -12,13 +12,20 @@ export default function ProductItem({product}:{product:Product}) {
             src={product.image}
             alt={product.name}
             width={300}
-            height={300}
-            className='object-cover h-64 w-full'
+            height={400}
+            loading = 'lazy'
+            className='object-cover h-full '
           />
         </Link>
       </figure>
       <div className='card-body'>
-        <h2 className='card-title font-normal'>{product.name}</h2>
+        <Link href={`/product/${product.slug}`}> 
+          <h2 className='card-title font-normal'>{product.name}</h2>
+        </Link>
+        <p className='mb-2'> {product.brand}</p>
+        <div className='card-action flex items-center justify-between'>
+          <span className='text-2xl'>${product.price}</span>
+        </div>
       </div>
     </div>
   )

@@ -1,15 +1,31 @@
 
 export type Product = {
-    _id:string
+    _id?:string
     name:string
     slug:string
     image:string
-    banner:string
+    banner?:string
     price:number
-    describtion:string
+    brand:string
+    describtion?:string
     category:string
     rating:number
     numReviews: number
     colors?:[]
     sizes?:[]
+    network:string
+    sim:string
+    weight:number
+    display:string
+    Resolution:string
+    OS:string
+    Chipset:string
+    CPU:string
+    GPU:string
+    MAINCAMERA:string
+    Video:string
+    SELFIE:string
+    speaker:string
+    jack:string
+    BATTERY:string
 }
