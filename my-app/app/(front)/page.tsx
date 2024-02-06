@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      ggfd
-    </div>
+    <>
+      <h2 className="text-2xl py-2">Latest Product</h2>
+    </>
   );
 }
