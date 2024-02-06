@@ -1,4 +1,5 @@
 "use client"
+import ThemeChange from "@/components/theme/ThemeChange";
 import Image from "next/image";
 import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
@@ -12,9 +13,6 @@ useEffect(() => {
 }, [])
   return (
     <>
-    <button data-set-theme="" data-act-class="ACTIVECLASS"></button>
-<button data-set-theme="dark" data-act-class="ACTIVECLASS"></button>
-<button data-set-theme="pink" data-act-class="ACTIVECLASS"></button>
       <h2 className="text-2xl py-2">Latest Product</h2>
     </>
   );

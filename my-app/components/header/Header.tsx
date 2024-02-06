@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import ThemeChange from '../theme/ThemeChange'
 
 const Header = () => {
   return (
@@ -10,6 +11,9 @@ const Header = () => {
             Costom Kala
           </Link>
           <ul className='flex'>
+            <li>
+              <ThemeChange/>
+            </li>
             <li>
               <Link className='btn btn-ghost rounded-btn' href="/cart">
                 Cart
