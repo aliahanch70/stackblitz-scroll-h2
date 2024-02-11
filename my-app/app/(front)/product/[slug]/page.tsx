@@ -28,11 +28,32 @@ export default function ProductDetails({
                     height={640}
                     style={{
                         width:'100%',
-                        height:'auto'
+                        height:'auto',
+
                     }}
                 >
 
                 </Image>
+            </div>
+            <div className="p-3 m-3 bg-base-100 rounded-2xl shadow border-amber-50 grid w-full min-w-[500px]">
+                <h1 className="mb-3 text-2xl">
+                    {product.brand}{" "}{product.name}
+                </h1>
+                <h2 style={{fontSize:'0.9rem'}}>
+                    Camera: {product.MAINCAMERA}
+                </h2>
+                <h2 style={{fontSize:'0.9rem'}}>
+                    Chipset: {product.Chipset}
+                </h2>
+                <h2 style={{fontSize:'0.9rem'}}>
+                    Display: {product.display}
+                </h2>
+                <h2 style={{fontSize:'0.9rem'}}>
+                    Battery: {product.BATTERY}
+                </h2>
+                <p className="bg-base-200">
+                    price: ${product.price}
+                </p>
             </div>
         </div>
     </>
